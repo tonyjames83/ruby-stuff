@@ -1,4 +1,4 @@
-require 'byebug'
+
 
 def string_converter
     provided = "(id,name,email,type(id,name,customFields(c1,c2,c3)),externalID)"
@@ -22,7 +22,6 @@ def string_converter
         puts "  - #{keyword}"
     end
 
-    # byebug
     array_portion[2].split(",").each do |keyword|
         puts "     - #{keyword}"
     end
